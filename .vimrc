@@ -7,7 +7,7 @@ set showcmd		" show command
 set hlsearch		" set search result high light
 set incsearch		" set incomplate search high light
 set backspace=indent,eol,start
-set guifont=Monospace\ 14   " set font and size
+set guifont=Inconsolata\ 16   " set font and size
 set imi=0 ims=0
 
 syntax on
@@ -46,7 +46,6 @@ map <F1> :call InteractiveHelp() <return>
 map <F2> :call ToggleMenu() <return>
 map <F8> :NERDTreeToggle <return>
 map <F9> :TlistToggle <return>
-map <F5> :! make <return>
 
 nmap <leader>ff :echo system('sdcv -n ' . expand("<cword>")) <return>
 
