@@ -44,9 +44,9 @@ autocmd! BufWritePost .vimrc source ~/.vimrc
 " ===============================================
 map <F1> :call InteractiveHelp() <return>
 map <F2> :call ToggleMenu() <return>
-map <F8> :NERDTreeToggle <return>
+map <F3> :NERDTreeToggle <return>
 map <F9> :TlistToggle <return>
-map <F5> :! make <return>
+map <leader>mm :! make <return>
 
 nmap <leader>ff :echo system('sdcv -n ' . expand("<cword>")) <return>
 
@@ -88,3 +88,9 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
+
+
+" NERDTree plugin settings
+" ==============================================
+let NERDTreeChDirMode=2
+let NERDTreeShowBookmarks=1
