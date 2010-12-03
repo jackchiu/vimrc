@@ -1,0 +1,1 @@
+echo 'auto file js'

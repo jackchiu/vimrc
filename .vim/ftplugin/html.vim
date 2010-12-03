@@ -1,0 +1,9 @@
+echo 'html auto file type'
+set tabstop=2
+set shiftwidth=2 
+set softtabstop=2
+set expandtab
+set autoindent
+set cindent
+set smartindent
+set nu
