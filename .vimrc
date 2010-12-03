@@ -49,6 +49,7 @@ map <F9> :TlistToggle <return>
 map <leader>mm :! make <return>
 
 nmap <leader>ff :echo system('sdcv -n ' . expand("<cword>")) <return>
+nmap <leader>tr :! ~/bin/generate_tags <return>
 
 " taglist plugin (ctags)
 " ===============================================
@@ -88,7 +89,6 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
-
 
 " NERDTree plugin settings
 " ==============================================
