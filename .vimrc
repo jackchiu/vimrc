@@ -44,10 +44,12 @@ autocmd! BufWritePost .vimrc source ~/.vimrc
 " ===============================================
 map <F1> :call InteractiveHelp() <return>
 map <F2> :call ToggleMenu() <return>
-map <F8> :NERDTreeToggle <return>
+map <F3> :NERDTreeToggle <return>
 map <F9> :TlistToggle <return>
 
-nmap <leader>ff :echo system('sdcv -n ' . expand("<cword>")) <return>
+map <leader>mm :! make <return>
+map <leader>ff :echo system('sdcv -n ' . expand("<cword>")) <return>
+map <leader>tr :! ~/bin/generate_tags <return>
 
 " taglist plugin (ctags)
 " ===============================================
@@ -89,3 +91,8 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 
 let g:vimim_cloud_sogou=-1
+
+" NERDTree plugin settings
+" ==============================================
+let NERDTreeChDirMode=2
+let NERDTreeShowBookmarks=1
