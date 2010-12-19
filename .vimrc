@@ -47,6 +47,8 @@ map <F2> :call ToggleMenu() <return>
 map <F3> :NERDTreeToggle <return>
 map <F9> :TlistToggle <return>
 
+map <C-s> :write <return>
+
 map <leader>mm :! make <return>
 map <leader>ff :echo system('sdcv -n ' . expand("<cword>")) <return>
 map <leader>tr :! ~/bin/generate_tags <return>
@@ -90,9 +92,18 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 
+" vimim settings
+" ==============================================
 let g:vimim_cloud_sogou=-1
 
 " NERDTree plugin settings
 " ==============================================
 let NERDTreeChDirMode=2
 let NERDTreeShowBookmarks=1
+
+" rails vim settings
+autocmd FileType ruby map <buffer> <leader>ru :Runittest <return>
+autocmd FileType ruby map <buffer> <leader>rv :Rview <return>
+autocmd FileType ruby map <buffer> <leader>rm :Rmodel <return>
+autocmd FileType ruby map <buffer> <leader>rk :Rake <return>
+

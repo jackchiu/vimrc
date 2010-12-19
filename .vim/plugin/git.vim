@@ -127,6 +127,7 @@ endfunction
 
 " Add file to index.
 function! GitAdd(expr)
+    echo a:expr 
     let file = s:Expand(strlen(a:expr) ? a:expr : '%')
 
     call GitDoCommand('add ' . file)
