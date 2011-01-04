@@ -1,4 +1,3 @@
-echo 'html auto file type'
 set tabstop=2
 set shiftwidth=2 
 set softtabstop=2
