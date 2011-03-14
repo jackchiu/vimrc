@@ -49,7 +49,8 @@ map <F9> :TlistToggle <return>
 
 map <C-s> :write <return>
 
-map <leader>mm :! make <return>
+map <leader>mk :! make <return>
+map <leader>rk :! rake <return>
 map <leader>ff :echo system('sdcv -n ' . expand("<cword>")) <return>
 map <leader>tr :! ~/bin/generate_tags <return>
 
