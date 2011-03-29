@@ -1,9 +1,3 @@
-set tabstop=4
-set shiftwidth=4
-set autoindent
-set smartindent
-set nu
-
 " To make this file do stuff, add something like the following (without the
 " leading ") to your ~/.vimrc:
 " au BufNewFile,BufRead *.yaml,*.yml so ~/src/PyYaml/YAML.vim

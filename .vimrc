@@ -7,7 +7,7 @@ set showcmd		" show command
 set hlsearch		" set search result high light
 set incsearch		" set incomplate search high light
 set backspace=indent,eol,start
-set guifont=Inconsolata\ 16   " set font and size
+set guifont=Inconsolata\ 14   " set font and size
 set imi=0 ims=0
 
 syntax on
@@ -80,11 +80,9 @@ autocmd BufNewFile,BufRead *.aspx set filetype=html
 "
 " javascript develop config
 " ==============================================
-autocmd FileType javascript set makeprg=jsl\ -nologo\ -nofilelisting\ -nosummary\ -nocontext\ -conf\ ~/.config/jsl.conf\ -process\ %
-autocmd FileType javascript set errorformat=%f(%l):\ %m
-autocmd BufRead,BufNewFile jquery.*.js set syntax=jquery
 autocmd FileType javascript set dictionary=~/.vim/dict/javascript.dict
 autocmd FileType css set dictionary=~/.vim/dict/css.dict
+autocmd BufNewFile,BufRead *.json set filetype=javascript
 "
 " mini buffer exploer config
 " ==============================================
@@ -106,5 +104,7 @@ let NERDTreeShowBookmarks=1
 autocmd FileType ruby map <buffer> <leader>ru :Runittest <return>
 autocmd FileType ruby map <buffer> <leader>rv :Rview <return>
 autocmd FileType ruby map <buffer> <leader>rm :Rmodel <return>
+autocmd FileType ruby map <buffer> <leader>rc :Rcontroller <return>
 autocmd FileType ruby map <buffer> <leader>rk :Rake <return>
 
+let g:SimpleJsIndenter_BriefMode = 1
